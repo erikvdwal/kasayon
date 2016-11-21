@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DA6B060D1DE2C7A3002B8507 /* Kasayon.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6B060B1DE2C7A3002B8507 /* Kasayon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6B06171DE2C7D2002B8507 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B06131DE2C7D2002B8507 /* NibLoadable.swift */; };
+		DA6B06181DE2C7D2002B8507 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B06141DE2C7D2002B8507 /* ReusableView.swift */; };
+		DA6B06191DE2C7D2002B8507 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B06151DE2C7D2002B8507 /* UICollectionView+Ext.swift */; };
+		DA6B061A1DE2C7D2002B8507 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B06161DE2C7D2002B8507 /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA6B06081DE2C7A3002B8507 /* Kasayon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kasayon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6B060B1DE2C7A3002B8507 /* Kasayon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kasayon.h; sourceTree = "<group>"; };
 		DA6B060C1DE2C7A3002B8507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6B06131DE2C7D2002B8507 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = Source/NibLoadable.swift; sourceTree = SOURCE_ROOT; };
+		DA6B06141DE2C7D2002B8507 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableView.swift; path = Source/ReusableView.swift; sourceTree = SOURCE_ROOT; };
+		DA6B06151DE2C7D2002B8507 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Ext.swift"; path = "Source/UICollectionView+Ext.swift"; sourceTree = SOURCE_ROOT; };
+		DA6B06161DE2C7D2002B8507 /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Ext.swift"; path = "Source/UITableView+Ext.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				DA6B060B1DE2C7A3002B8507 /* Kasayon.h */,
 				DA6B060C1DE2C7A3002B8507 /* Info.plist */,
+				DA6B06131DE2C7D2002B8507 /* NibLoadable.swift */,
+				DA6B06141DE2C7D2002B8507 /* ReusableView.swift */,
+				DA6B06151DE2C7D2002B8507 /* UICollectionView+Ext.swift */,
+				DA6B06161DE2C7D2002B8507 /* UITableView+Ext.swift */,
 			);
 			path = Kasayon;
 			sourceTree = "<group>";
@@ -96,6 +108,7 @@
 					DA6B06071DE2C7A3002B8507 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = W4886UME6L;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6B06171DE2C7D2002B8507 /* NibLoadable.swift in Sources */,
+				DA6B061A1DE2C7D2002B8507 /* UITableView+Ext.swift in Sources */,
+				DA6B06191DE2C7D2002B8507 /* UICollectionView+Ext.swift in Sources */,
+				DA6B06181DE2C7D2002B8507 /* ReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 		DA6B06111DE2C7A3002B8507 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W4886UME6L;
@@ -252,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.tapwise.Kasayon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +278,7 @@
 		DA6B06121DE2C7A3002B8507 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W4886UME6L;
