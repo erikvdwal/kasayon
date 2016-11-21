@@ -18,3 +18,21 @@ public extension NibLoadable where Self: UIView {
         return String(describing: self)
     }
 }
+
+
+public extension NibLoadable where Self: UIView {
+    /// Instantiate a class from a nibfile
+    ///
+    /// - Parameters:
+    ///   - owner: The nib and class owner
+    ///   - bundle: The bundle containing the nib
+    /// - Returns: The instantiated class
+    static func instantiateFromNib(owner: AnyObject? = nil, bundle: Bundle? = nil) -> Self {
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        guard let view = nib.instantiate(withOwner: owner, options: nil).first as? Self else {
+            fatalError("Could not instantiate \(nibName) from nib")
+        }
+        
+        return view
+    }
+}
