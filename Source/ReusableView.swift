@@ -13,7 +13,7 @@ public protocol ReusableView: class {
     static var reuseIdentifier: String { get }
 }
 
-public extension ReusableView {
+public extension ReusableView where Self: UIView {
     static var reuseIdentifier: String {
         return String(describing: self)
     }
@@ -21,6 +21,9 @@ public extension ReusableView {
 
 // A tableviewcell is reusable by default
 extension UITableViewCell: ReusableView {}
+
+// A tableviewheaderfooterview is reusable by default
+extension UITableViewHeaderFooterView: ReusableView {}
 
 // A collectionviewcell is reusable by default
 extension UICollectionViewCell: ReusableView {}
