@@ -25,5 +25,5 @@ extension UITableViewCell: ReusableView {}
 // A tableviewheaderfooterview is reusable by default
 extension UITableViewHeaderFooterView: ReusableView {}
 
-// A collectionviewcell is reusable by default
-extension UICollectionViewCell: ReusableView {}
+// A collectionreusableView is reusable by default
+extension UICollectionReusableView: ReusableView {}
