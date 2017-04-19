@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
 Kasayon, which apparently means 'Convenience' in Cuban, is a collection of protocols that aim to make working with table- and collectionviews a bit easier.
                        DESC
                        
-  s.ios.deployment_target = '9.0'
   s.source_files = 'Source/**/*'
+
+  s.ios.deployment_target = '9.0'
+  s.tvos.deployment_target = '9.0'
 end
