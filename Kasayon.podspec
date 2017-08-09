@@ -12,7 +12,6 @@ Kasayon, which apparently means 'Convenience' in Cuban, is a collection of proto
                        DESC
                        
   s.source_files = 'Source/**/*'
-
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
 end
